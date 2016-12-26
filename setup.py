@@ -1,8 +1,8 @@
 """Another unicode transliteration library.
 """
-from setuptools import setup
+from setuptools import setup, find_packages
 
-__version__ = '0.5'
+__version__ = '0.5.1'
 
 setup(
     name="unitrans",
@@ -14,9 +14,7 @@ setup(
     # long_description=__doc__,
     license='MIT',
     zip_safe=False,
-    py_modules=[
-        'unitrans',
-    ],
+    packages=find_packages(),
     include_package_data=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
