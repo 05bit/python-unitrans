@@ -22,7 +22,7 @@ def install(path=None, unknown=None):
         load(path=path, unknown=unknown)
 
 
-def translate(text):
+def transliterate(text):
     result = []
     unknown = charmap['?']
     for x in text:
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     # print(json.dumps(charmap, indent=2))
 
     print("Мама мыла раму!")
-    print(translate("Мама мыла раму!"))
+    print(transliterate("Мама мыла раму!"))
 
     print("Пошёл ежик за йогуртом и попал в цивилизацию!")
-    print(translate("Пошёл ежик за йогуртом и попал в цивилизацию!"))
+    print(transliterate("Пошёл ежик за йогуртом и попал в цивилизацию!"))
