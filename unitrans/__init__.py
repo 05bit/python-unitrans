@@ -1,1 +1,1 @@
-from .unitrans import charmap, load, install, translate
+from .unitrans import charmap, load, install, transliterate
